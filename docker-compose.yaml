@@ -2,7 +2,7 @@ version: '3.8'
 services:
 
   zoo-1:
-    image: confluentinc/cp-zookeeper:6.0.1
+    image: confluentinc/cp-zookeeper:6.2.1
     container_name: zoo-1
     hostname: zoo-1
     ports:
@@ -17,7 +17,7 @@ services:
      - kakfa-net
 
   kafka-1:
-    image: confluentinc/cp-kafka:6.0.1
+    image: confluentinc/cp-kafka:6.2.1
     container_name: kafka-1
     hostname: kafka-1
     ports:
